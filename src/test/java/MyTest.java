@@ -16,11 +16,19 @@ public class MyTest {
         thirdNode.setKey(70);
         newList.appendNode(firstNode);
         newList.appendNode(thirdNode);
-        newList.insertBetween(secondNode,firstNode,thirdNode);
+        newList.insertBetween(secondNode, firstNode, thirdNode);
         newList.printList();
-        boolean result = newList.head.equals(firstNode) &&
-                newList.head.getNext().equals(secondNode) &&
-                newList.tail.equals(thirdNode);
+
+        //first deletion
+        newList.pop();
+        newList.printList();
+        boolean result1 = newList.head.getNext().equals(thirdNode);
+        Assert.assertTrue(result1);
+
+        //second deletion
+        newList.pop();
+        newList.printList();
+        boolean result = newList.head.getNext() == null;
         Assert.assertTrue(result);
     }
 }
