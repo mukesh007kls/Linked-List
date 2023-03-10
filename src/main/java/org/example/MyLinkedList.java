@@ -59,4 +59,14 @@ public class MyLinkedList<K> {
         tempNode.setNext(null);
         return tempNode;
     }
+    public INode<K> popTail(){
+        INode<K> tempNode=tail;
+        INode<K> node=head;
+        while (!node.getNext().equals(tail)){
+            node=node.getNext();
+        }
+        tail=node;
+        tail.setNext(null);
+        return tempNode;
+    }
 }

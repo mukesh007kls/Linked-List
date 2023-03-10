@@ -15,11 +15,11 @@ public class Main {
         newList.printList();
 
         //first node deleted
-        newList.pop();
+        newList.popTail();
         newList.printList();
 
         //second node deleted
-        newList.pop();
+        newList.popTail();
         newList.printList();
     }
 }

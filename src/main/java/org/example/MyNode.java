@@ -1,6 +1,6 @@
 package org.example;
 
-public class MyNode<K> implements INode<K>{
+public class MyNode<K> implements INode<K> {
     private K key;
     private INode<K> next;
 
@@ -11,7 +11,7 @@ public class MyNode<K> implements INode<K>{
 
     @Override
     public void setKey(K key) {
-        this.key=key;
+        this.key = key;
     }
 
     @Override
@@ -21,14 +21,11 @@ public class MyNode<K> implements INode<K>{
 
     @Override
     public void setNext(INode<K> next) {
-        this.next=next;
+        this.next = next;
     }
 
     @Override
     public String toString() {
-        return "MyNode{" +
-                "key=" + key +
-                ", \nnext=" + next +
-                '}';
+        return key + "->" + next;
     }
 }
