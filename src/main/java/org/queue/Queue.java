@@ -18,4 +18,13 @@ public class Queue<K> {
         myLinkedList.printList();
     }
 
+    public INode<K> dequeue(){
+        return myLinkedList.pop();
+    }
+    public int size(){
+        return myLinkedList.size();
+    }
+    public boolean checkForEmptyQueue(){
+        return size()==0;
+    }
 }

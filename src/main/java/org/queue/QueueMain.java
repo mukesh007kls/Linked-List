@@ -15,10 +15,20 @@ public class QueueMain {
         secondNode.setKey(30);
         thirdNode.setKey(70);
 
-        Queue myQueue=new Queue();
+        Queue myQueue = new Queue();
         myQueue.enqueue(firstNode);
         myQueue.enqueue(secondNode);
         myQueue.enqueue(thirdNode);
         myQueue.printQueue();
+        System.out.println(myQueue.size());
+
+        myQueue.dequeue();
+        myQueue.printQueue();
+        System.out.println(myQueue.size());
+        System.out.println(myQueue.checkForEmptyQueue());
+
+        myQueue.dequeue();
+        myQueue.dequeue();
+        System.out.println(myQueue.size() + "----" + myQueue.checkForEmptyQueue());
     }
 }
