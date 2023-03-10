@@ -6,12 +6,12 @@ public class Main {
         INode<Integer> firstNode=new MyNode<>();
         INode<Integer> secondNode=new MyNode<>();
         INode<Integer> thirdNode=new MyNode<>();
-        firstNode.setKey(70);
+        firstNode.setKey(56);
         secondNode.setKey(30);
-        thirdNode.setKey(56);
-        newList.add(firstNode);
-        newList.add(secondNode);
-        newList.add(thirdNode);
+        thirdNode.setKey(70);
+        newList.appendNode(firstNode);
+        newList.appendNode(secondNode);
+        newList.appendNode(thirdNode);
         newList.printList();
     }
 }
