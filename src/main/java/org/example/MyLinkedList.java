@@ -102,4 +102,16 @@ public class MyLinkedList<K> {
         }
         return size;
     }
+    public void sort(){
+        INode<K> tempNode1=head;
+        INode<K> tempNode2;
+        while (tempNode1!=null){
+            tempNode2=tempNode1.getNext();
+            while (tempNode2!=null){
+                if(tempNode1.getKey() tempNode2.getKey()){
+
+                }
+            }
+        }
+    }
 }
