@@ -25,5 +25,10 @@ public class Main {
         newNode.setKey(40);
         newList.insertAfterNode(newNode,secondNode);
         newList.printList();
+        System.out.println("Size is:-"+newList.size());
+        //delete node 40
+        newList.deleteASpesificNode(newNode);
+        newList.printList();
+        System.out.println("Size is:-"+newList.size());
     }
 }

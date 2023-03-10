@@ -86,4 +86,20 @@ public class MyLinkedList<K> {
         newNode.setNext(tempNode.getNext());
         tempNode.setNext(newNode);
     }
+    public void deleteASpesificNode(INode<K> node){
+        INode<K> tempNode=head;
+        while(tempNode.getNext()!=node){
+            tempNode=tempNode.getNext();
+        }
+        tempNode.setNext(tempNode.getNext().getNext());
+    }
+    public int size(){
+        int size=0;
+        INode<K> tempNode=head;
+        while (tempNode!=null){
+            tempNode=tempNode.getNext();
+            size++;
+        }
+        return size;
+    }
 }
