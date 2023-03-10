@@ -22,5 +22,13 @@ public class StackMain {
 
         myStack.printStack();
         myStack.peak();
+        System.out.println(myStack.stackSize());
+        myStack.pop();
+        myStack.printStack();
+        System.out.println(myStack.checkForEmptyStack());
+        myStack.pop();
+        myStack.stackSize();
+        myStack.pop();
+        System.out.println(myStack.checkForEmptyStack());
     }
 }
