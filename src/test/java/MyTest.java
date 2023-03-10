@@ -1,6 +1,6 @@
-import org.example.INode;
-import org.example.MyLinkedList;
-import org.example.MyNode;
+import org.linkedList.INode;
+import org.linkedList.MyLinkedList;
+import org.linkedList.MyNode;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

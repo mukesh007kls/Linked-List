@@ -1,4 +1,4 @@
-package org.example;
+package org.linkedList;
 
 public class MyLinkedList<K> {
     public INode<K> head;
@@ -107,11 +107,11 @@ public class MyLinkedList<K> {
         INode<K> tempNode2;
         while (tempNode1!=null){
             tempNode2=tempNode1.getNext();
-            while (tempNode2!=null){
-                if(tempNode1.getKey() tempNode2.getKey()){
-
-                }
-            }
+//            while (tempNode2!=null){
+//                if(tempNode1.getKey() tempNode2.getKey()){
+//
+//                }
+//            }
         }
     }
 }

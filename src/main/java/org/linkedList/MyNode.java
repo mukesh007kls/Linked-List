@@ -1,4 +1,4 @@
-package org.example;
+package org.linkedList;
 
 public class MyNode<K> implements INode<K> {
     private K key;

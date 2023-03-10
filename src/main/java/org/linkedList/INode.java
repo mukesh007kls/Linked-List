@@ -1,4 +1,4 @@
-package org.example;
+package org.linkedList;
 
 public interface INode<K> {
     K getKey();

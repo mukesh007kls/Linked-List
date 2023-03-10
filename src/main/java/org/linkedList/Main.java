@@ -1,4 +1,4 @@
-package org.example;
+package org.linkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,9 +6,7 @@ public class Main {
         INode<Integer> firstNode = new MyNode<>();
         INode<Integer> secondNode = new MyNode<>();
         INode<Integer> thirdNode = new MyNode<>();
-        INode<Integer> fourthNode = new MyNode<>();
-        INode<Integer> fifthNode = new MyNode<>();
-        INode<Integer> sixthNode = new MyNode<>();
+
 
         firstNode.setKey(56);
         secondNode.setKey(30);
