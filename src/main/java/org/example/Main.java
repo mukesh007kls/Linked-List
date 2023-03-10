@@ -6,20 +6,21 @@ public class Main {
         INode<Integer> firstNode = new MyNode<>();
         INode<Integer> secondNode = new MyNode<>();
         INode<Integer> thirdNode = new MyNode<>();
+        INode<Integer> fourthNode = new MyNode<>();
+        INode<Integer> fifthNode = new MyNode<>();
+        INode<Integer> sixthNode = new MyNode<>();
+
         firstNode.setKey(56);
         secondNode.setKey(30);
         thirdNode.setKey(70);
-        newList.appendNode(firstNode);
-        newList.appendNode(thirdNode);
-        newList.insertBetween(secondNode, firstNode, thirdNode);
+
+
+        newList.add(firstNode);
+        newList.add(secondNode);
+        newList.add(thirdNode);
         newList.printList();
 
-        //first node deleted
-        newList.popTail();
-        newList.printList();
-
-        //second node deleted
-        newList.popTail();
-        newList.printList();
+        //search for a node
+        System.out.println(newList.searchForNode(30));
     }
 }

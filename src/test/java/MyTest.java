@@ -128,4 +128,40 @@ public class MyTest {
         boolean result = newList.head.getNext() == null;
         Assert.assertTrue(result);
     }
+    @Test
+    public void testToSearchForANode(){
+        MyLinkedList<Integer> newList = new MyLinkedList<>();
+        INode<Integer> firstNode = new MyNode<>();
+        INode<Integer> secondNode = new MyNode<>();
+        INode<Integer> thirdNode = new MyNode<>();
+        INode<Integer> fourthNode = new MyNode<>();
+        INode<Integer> fifthNode = new MyNode<>();
+        INode<Integer> sixthNode = new MyNode<>();
+
+        firstNode.setKey(56);
+        secondNode.setKey(30);
+        thirdNode.setKey(70);
+        fourthNode.setKey(100);
+        fifthNode.setKey(12);
+        sixthNode.setKey(42);
+
+        newList.add(firstNode);
+        newList.add(secondNode);
+        newList.add(thirdNode);
+        newList.add(fourthNode);
+        newList.add(fifthNode);
+        newList.add(sixthNode);
+        newList.printList();
+
+        //search for a node
+        boolean result=newList.searchForNode(100).equals(fourthNode);
+        System.out.println(result);
+        System.out.println(newList.searchForNode(100));
+        Assert.assertTrue(result);
+
+        //search fora node note present
+        boolean result1=newList.searchForNode(10)==null;
+        System.out.println(result1);
+        Assert.assertTrue(result1);
+    }
 }
