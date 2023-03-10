@@ -20,7 +20,10 @@ public class Main {
         newList.add(thirdNode);
         newList.printList();
 
-        //search for a node
-        System.out.println(newList.searchForNode(30));
+        //Add new node after 30
+        INode<Integer> newNode=new MyNode<>();
+        newNode.setKey(40);
+        newList.insertAfterNode(newNode,secondNode);
+        newList.printList();
     }
 }

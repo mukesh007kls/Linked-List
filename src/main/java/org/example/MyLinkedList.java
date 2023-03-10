@@ -78,4 +78,12 @@ public class MyLinkedList<K> {
         }
         return tempNode;
     }
+    public void insertAfterNode(INode<K> newNode, INode<K> previousNode){
+        INode<K> tempNode=head;
+        while (tempNode!=previousNode){
+            tempNode=tempNode.getNext();
+        }
+        newNode.setNext(tempNode.getNext());
+        tempNode.setNext(newNode);
+    }
 }
