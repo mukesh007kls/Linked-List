@@ -41,5 +41,12 @@ public class MyLinkedList<K> {
         myNodes.append(tempNode.getKey());
         System.out.println(myNodes);
     }
-
+    public void insertBetween(INode<K> secondNode,INode<K> firstNode,INode<K> thirdNode){
+        INode<K> tempNode=head;
+        while (tempNode!=firstNode){
+            tempNode=tempNode.getNext();
+        }
+        tempNode.setNext(secondNode);
+        secondNode.setNext(thirdNode);
+    }
 }

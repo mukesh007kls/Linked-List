@@ -15,8 +15,8 @@ public class MyTest {
         secondNode.setKey(30);
         thirdNode.setKey(70);
         newList.appendNode(firstNode);
-        newList.appendNode(secondNode);
         newList.appendNode(thirdNode);
+        newList.insertBetween(secondNode,firstNode,thirdNode);
         newList.printList();
         boolean result = newList.head.equals(firstNode) &&
                 newList.head.getNext().equals(secondNode) &&
